@@ -6,7 +6,7 @@ import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
 
 // Importing global CSS styles
-import './styles/app.css';
+import './styles/style.css';
 
 // Main App Component
 function App() {
