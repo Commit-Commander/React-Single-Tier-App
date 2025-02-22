@@ -19,19 +19,16 @@ RUN npm run build
 # ------------------------------ #
 
 # Stage 2: Production
-FROM node:slim AS production
+FROM nginx:slim AS production
 
 # Set working directory
-WORKDIR /app
-
-# Install serve globally for serving static files
-RUN npm install -g serve
+WORKDIR /usr/share/nginx/html
 
 # Copy built application from the builder stage
-COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/dist ./
 
 # Expose the necessary port
-EXPOSE 3000
+EXPOSE 80
 
 # Command to run the server
-CMD ["serve", "-s", "dist"]
+CMD ["nginx", "-g", "daemon off;"]
