@@ -19,7 +19,7 @@ RUN npm run build
 # ------------------------------ #
 
 # Stage 2: Production
-FROM nginx:slim AS production
+FROM nginx:alpine AS production
 
 # Set working directory
 WORKDIR /usr/share/nginx/html
