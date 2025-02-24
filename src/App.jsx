@@ -45,11 +45,6 @@ function App() {
           count is {count}
         </button>
       </div>
-
-      {/* Footer text */}
-      <p className="read-the-docs">
-        Click to learn more ...
-      </p>
     </>
   );
 };
