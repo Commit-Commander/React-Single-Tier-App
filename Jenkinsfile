@@ -37,4 +37,23 @@ pipeline {
             }
         }
     }
+
+    post {
+        success {
+            script {
+                emailext from: "kartikeynarayan9598@gmail.com",
+                    to: "kartikey.narayan@inc.in",
+                    subject: "Jenkins Action",
+                    body: "The Jenkins pipeline has completed successfully. 🚀"
+            }
+        }
+        failure {
+            script {
+                emailext from: "kartikeynarayan9598@gmail.com",
+                    to: "kartikey.narayan@inc.in",
+                    subject: "Jenkins Action",
+                    body: "The Jenkins pipeline has failed. ❌"
+            }
+        }
+    }
 }
