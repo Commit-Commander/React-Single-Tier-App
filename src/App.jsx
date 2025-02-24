@@ -35,7 +35,7 @@ function App() {
       </div>
 
       {/* Application heading */}
-      <h1>Single Tier Application With Jenkins CI-CD Pipeline</h1>
+      <h1>React Application With Jenkins CI-CD Pipeline</h1>
 
       {/* Card section with counter button */}
       <div className="card">
