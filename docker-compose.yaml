@@ -1,0 +1,16 @@
+# Define the version of the Docker Compose file
+version: '3.8'
+
+# Define services that will run in the containers
+services:
+  # React Service
+  react-single-tier-app:
+    # Use the image from the Docker Hub
+    image: kartikeynarayan/react-single-tier-app  
+    # Set a container name for easy identification
+    container_name: react-single-tier-app  
+    # Expose the application port to the host machine
+    ports:
+      - "80:80"  
+    # Automatically restart the application if it crashes
+    restart: always 
