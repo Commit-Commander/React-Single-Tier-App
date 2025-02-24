@@ -48,7 +48,7 @@ function App() {
 
       {/* Footer text */}
       <p className="read-the-docs">
-        Click to learn more
+        Click to learn more ...
       </p>
     </>
   );
