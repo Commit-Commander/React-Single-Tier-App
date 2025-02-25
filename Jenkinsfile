@@ -36,7 +36,7 @@ pipeline {
         stage("Clean Up") {
             steps {
                 script {
-                    clean-up()
+                    clean_up()
                 }
             }
         }
